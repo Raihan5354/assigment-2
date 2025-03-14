@@ -1,18 +1,23 @@
 <!DOCTYPE html>
+<!-- The document type declaration, specifying that this is an HTML5 document -->
 <html lang="en">
-<!-- 
-  Created by Raihan Patel
-  Main entry point for the Slovak Education Center website
-  This file serves as the homepage and includes the main navigation
--->
+<!-- The root element of the HTML document with the language attribute set to English -->
 <head>
+    <!-- The head element containing meta-information about the document -->
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport to make the website responsive on mobile devices -->
     <meta name="description" content="Slovenské Vzdelávacie Centrum - South Manchester - Providing Slovak language education and cultural programs">
+    <!-- Provides a brief description of the website -->
     <title>SVCSM - Slovak Education Center</title>
+    <!-- The title of the document, displayed in the browser tab -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link to the main stylesheet for the website -->
     <link rel="stylesheet" href="css/navigation.css">
+    <!-- Link to the stylesheet specifically for the navigation bar -->
     <link rel="stylesheet" href="css/home.css">
+    <!-- Link to the stylesheet for the homepage -->
     <!-- Google Translate Integration -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -23,17 +28,24 @@
             }, 'google_translate_element');
         }
     </script>
+    <!-- Script to initialize Google Translate for language switching -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- External script to load Google Translate -->
 </head>
 <body>
     <!-- Language Switcher -->
     <div class="language-switcher">
         <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?w=24&h=24&fit=crop" alt="Language">
+        <!-- Image representing language switching -->
         <select id="languageSwitcher">
+            <!-- Dropdown for selecting languages -->
             <option value="en">English</option>
+            <!-- Option for English language -->
             <option value="sk">Slovenčina</option>
+            <!-- Option for Slovak language -->
         </select>
         <div id="google_translate_element"></div>
+        <!-- Container for Google Translate element -->
     </div>
 
     <!-- Navigation Bar -->
@@ -41,22 +53,35 @@
         <div class="nav-container">
             <div class="logo">
                 <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?w=50&h=50&fit=crop" alt="SVCSM Logo" class="logo-img">
+                <!-- Logo image for the navigation bar -->
                 <span class="logo-text">SVCSM</span>
+                <!-- Text for the logo -->
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <!-- Button for toggling the mobile menu -->
                 <span></span>
                 <span></span>
                 <span></span>
+                <!-- Three spans representing the hamburger icon -->
             </button>
             <ul class="nav-links">
+                <!-- Unordered list for navigation links -->
                 <li><a href="index.html" class="active">Home</a></li>
+                <!-- List item with link to Home page, marked as active -->
                 <li><a href="about.html">About Us</a></li>
+                <!-- List item with link to About Us page -->
                 <li><a href="school.html">Slovak School</a></li>
+                <!-- List item with link to Slovak School page -->
                 <li><a href="events.html">Events & Projects</a></li>
+                <!-- List item with link to Events & Projects page -->
                 <li><a href="library.html">Library & Resources</a></li>
+                <!-- List item with link to Library & Resources page -->
                 <li><a href="journal.html">Journal</a></li>
+                <!-- List item with link to Journal page -->
                 <li><a href="contact.html">Contact & Support</a></li>
-              <li><a href="membership.html">Membership</a></li>
+                <!-- List item with link to Contact & Support page -->
+                <li><a href="membership.html">Membership</a></li>
+                <!-- List item with link to Membership page -->
             </ul>
         </div>
     </nav>
