@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SVCSM Membership - Join our Slovak education community">
+    <title>Membership - SVCSM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?w=50&h=50&fit=crop" alt="SVCSM Logo" class="logo-img">
+                <span class="logo-text">SVCSM</span>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="school.html">Slovak School</a></li>
+                <li><a href="events.html">Events & Projects</a></li>
+                <li><a href="library.html">Library & Resources</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="membership.html" class="active">Membership</a></li>
+                <li><a href="contact.html">Contact & Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="membership-main">
+        <div class="container">
+            <!-- Membership Plans -->
+            <section class="membership-plans">
+                <h1>Join Our Community</h1>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h2>Basic Membership</h2>
+                        <p class="price">£50/year</p>
+                        <ul class="benefits">
+                            <li>Access to community events</li>
+                            <li>Newsletter subscription</li>
+                            <li>Library access</li>
+                            <li>Online resources</li>
+                        </ul>
+                        <button class="select-plan" data-plan="basic">Select Plan</button>
+                    </div>
+                    <div class="plan-card featured">
+                        <h2>Family Membership</h2>
+                        <p class="price">£80/year</p>
+                        <ul class="benefits">
+                            <li>All Basic benefits</li>
+                            <li>Family events access</li>
+                            <li>Discounted classes</li>
+                            <li>Priority registration</li>
+                        </ul>
+                        <button class="select-plan" data-plan="family">Select Plan</button>
+                    </div>
+                    <div class="plan-card">
+                        <h2>Supporting Member</h2>
+                        <p class="price">£150/year</p>
+                        <ul class="benefits">
+                            <li>All Family benefits</li>
+                            <li>VIP event access</li>
+                            <li>Special recognition</li>
+                            <li>Exclusive content</li>
+                        </ul>
+                        <button class="select-plan" data-plan="supporting">Select Plan</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Membership Registration Form -->
+            <section class="membership-registration">
+                <h2>Membership Registration</h2>
+                <form id="membershipForm" class="registration-form">
+                    <div class="form-group">
+                        <h3>Personal Information</h3>
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Membership Details</h3>
+                        <select name="membershipType" required>
+                            <option value="">Select Membership Type</option>
+                            <option value="basic">Basic Membership</option>
+                            <option value="family">Family Membership</option>
+                            <option value="supporting">Supporting Member</option>
+                        </select>
+                        <input type="number" name="familyMembers" placeholder="Number of Family Members (if applicable)">
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Areas of Interest</h3>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="interests" value="language">
+                                Language Learning
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="culture">
+                                Cultural Events
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="community">
+                                Community Activities
+                            </label>
+                            <label>
+                                <input type="checkbox" name="interests" value="volunteering">
+                                Volunteering
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Payment Information</h3>
+                        <div class="payment-info">
+                            <p>Payment will be processed securely after form submission.</p>
+                            <p>You will receive an email with payment instructions.</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="terms-group">
+                            <label>
+                                <input type="checkbox" name="termsAccepted" required>
+                                I agree to the membership terms and conditions
+                            </label>
+                            <label>
+                                <input type="checkbox" name="privacyAccepted" required>
+                                I agree to the privacy policy
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Registration</button>
+                </form>
+            </section>
+
+            <!-- Member Benefits -->
+            <section class="member-benefits">
+                <h2>Member Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Community Access</h3>
+                        <p>Join our vibrant Slovak community in South Manchester</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Educational Resources</h3>
+                        <p>Access our extensive library of learning materials</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Event Discounts</h3>
+                        <p>Enjoy special rates on all our events and workshops</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Support Network</h3>
+                        <p>Connect with other Slovak families in the area</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@svcsm.org</p>
+                    <p>Follow us on social media</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="school.html">Class Schedule</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="contact.html">Support Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Slovenské Vzdelávacie Centrum - South Manchester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/membership.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* 
+  Created by Raihan Patel
+  About page specific styles for the Slovak Education Center website
+  Contains styles for team members, timeline, and partner sections
+*/
+
+.about-main {
+    padding-top: 80px; /* Account for fixed navigation */
+}
+
+.about-section {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+/* Mission and Vision Cards */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.mission-card {
+    background-color: var(--background-light);
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Timeline */
+.journey-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #f8fafc;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+}
+
+.timeline-date {
+    width: 120px;
+    text-align: right;
+    padding-right: var(--spacing-lg);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.timeline-content {
+    width: calc(50% - 60px);
+    background-color: var(--background-light);
+    padding: var(--spacing-md);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Team Section */
+.team-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.team-member {
+    background-color: var(--background-light);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: var(--spacing-md);
+}
+
+.member-role {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.member-bio {
+    margin-bottom: var(--spacing-md);
+}
+
+.member-responsibilities {
+    list-style: none;
+    padding: 0;
+}
+
+.member-responsibilities li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.member-responsibilities li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Partners Section */
+.partners-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #f8fafc;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.partner-card {
+    background-color: var(--background-light);
+    padding: var(--spacing-md);
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+
+.partner-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        width: auto;
+        text-align: left;
+        padding-left: var(--spacing-lg);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .timeline-content {
+        width: calc(100% - var(--spacing-lg));
+        margin-left: var(--spacing-lg);
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+}

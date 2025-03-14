@@ -1,0 +1,211 @@
+/* 
+  Created by Raihan Patel
+  Contact page specific styles for the Slovak Education Center website
+  Contains styles for donation, volunteer, and contact sections
+*/
+
+.contact-main {
+    padding-top: 80px; /* Account for fixed navigation */
+}
+
+/* Donation Section */
+.donation-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.donation-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.donation-uses {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-md);
+}
+
+.donation-uses li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.donation-uses li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.method-card {
+    background-color: var(--background-light);
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: var(--spacing-md);
+}
+
+.method-card h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.method-card p {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Volunteer Section */
+.volunteer-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #f8fafc;
+}
+
+.volunteer-form {
+    max-width: 800px;
+    margin: var(--spacing-lg) auto;
+    background-color: var(--background-light);
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.volunteer-form input[type="text"],
+.volunteer-form input[type="email"],
+.volunteer-form input[type="tel"],
+.volunteer-form select,
+.volunteer-form textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.contact-card {
+    background-color: var(--background-light);
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.social-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+}
+
+/* Payment Section */
+.payment-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #f8fafc;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.payment-card {
+    background-color: var(--background-light);
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.payment-details,
+.refund-details {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-details li,
+.refund-details li {
+    padding: var(--spacing-xs) 0;
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.payment-details li::before,
+.refund-details li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-content,
+    .contact-grid,
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .volunteer-form {
+        padding: var(--spacing-md);
+    }
+}

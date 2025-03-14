@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  Created by Raihan Patel
+  Slovak School page for the Slovak Education Center website
+  Contains course information, registration, and learning resources
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slovak School - Classes, registration, and learning resources">
+    <title>Slovak School - SVCSM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/school.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?w=50&h=50&fit=crop" alt="SVCSM Logo" class="logo-img">
+                <span class="logo-text">SVCSM</span>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="school.html" class="active">Slovak School</a></li>
+                <li><a href="events.html">Events & Projects</a></li>
+                <li><a href="library.html">Library & Resources</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="contact.html">Contact & Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="school-main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="school-hero">
+                <h1>Welcome to Our Slovak School</h1>
+                <p>Discover the joy of learning Slovak language and culture in a supportive environment</p>
+            </section>
+
+            <!-- Our Approach Section -->
+            <section class="approach-section">
+                <h2>Our Teaching Approach</h2>
+                <div class="approach-grid">
+                    <div class="approach-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Interactive Learning">
+                        <h3>Interactive Learning</h3>
+                        <p>Engaging activities and games that make learning fun and effective</p>
+                    </div>
+                    <div class="approach-card">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop" alt="Cultural Integration">
+                        <h3>Cultural Integration</h3>
+                        <p>Immersive experiences in Slovak traditions and customs</p>
+                    </div>
+                    <div class="approach-card">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Personalized Support">
+                        <h3>Personalized Support</h3>
+                        <p>Individual attention and progress tracking for each student</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dates & Fees Section -->
+            <section class="dates-fees-section">
+                <h2>Dates & Fees</h2>
+                <div class="schedule-container">
+                    <div class="term-dates">
+                        <h3>Term Dates 2025</h3>
+                        <ul>
+                            <li>Spring Term: January 6 - March 28</li>
+                            <li>Summer Term: April 15 - July 12</li>
+                            <li>Autumn Term: September 2 - December 18</li>
+                        </ul>
+                    </div>
+                    <div class="fees">
+                        <h3>Course Fees</h3>
+                        <ul>
+                            <li>Weekly Classes: £15 per session</li>
+                            <li>Term Package: £150 (12 sessions)</li>
+                            <li>Sibling Discount: 10% off</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Registration Form Section -->
+            <section class="registration-section">
+                <h2>Student Registration</h2>
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <h3>Student Information</h3>
+                        <input type="text" id="studentName" name="studentName" placeholder="Student's Full Name" required>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        <select id="languageLevel" name="languageLevel" required>
+                            <option value="">Select Language Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Parent/Guardian Information</h3>
+                        <input type="text" id="parentName" name="parentName" placeholder="Parent/Guardian Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Medical & Consent Information</h3>
+                        <textarea id="medicalInfo" name="medicalInfo" placeholder="Any medical conditions or allergies"></textarea>
+                        
+                        <div class="consent-checkboxes">
+                            <label>
+                                <input type="checkbox" name="emergencyConsent" required>
+                                I give permission for emergency medical treatment
+                            </label>
+                            <label>
+                                <input type="checkbox" name="photoConsent">
+                                I give permission for photos/videos to be taken for promotional use
+                            </label>
+                            <label>
+                                <input type="checkbox" name="gdprConsent" required>
+                                I agree to the GDPR data protection policy
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Registration</button>
+                </form>
+            </section>
+
+            <!-- SEN Support Section -->
+            <section class="sen-section">
+                <h2>Special Educational Needs Support</h2>
+                <div class="sen-grid">
+                    <div class="sen-card">
+                        <h3>Inclusive Learning Environment</h3>
+                        <p>Our experienced teachers adapt lessons to accommodate different learning styles and needs.</p>
+                        <ul>
+                            <li>Personalized learning plans</li>
+                            <li>Modified materials and resources</li>
+                            <li>Regular progress monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="sen-card">
+                        <h3>Hands-On Learning</h3>
+                        <p>We incorporate various teaching methods to ensure every student can engage effectively:</p>
+                        <ul>
+                            <li>Interactive games and activities</li>
+                            <li>Music and movement</li>
+                            <li>Visual learning aids</li>
+                        </ul>
+                    </div>
+                    <div class="sen-card">
+                        <h3>Parent Communication</h3>
+                        <p>We maintain open communication with parents to ensure the best support for each child:</p>
+                        <ul>
+                            <li>Regular progress updates</li>
+                            <li>Strategy sharing sessions</li>
+                            <li>Parent-teacher meetings</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Online Practice Section -->
+            <section class="online-section">
+                <h2>Online Learning Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>Interactive Tools</h3>
+                        <ul>
+                            <li><a href="#" class="resource-link">Wordwall Vocabulary Games</a></li>
+                            <li><a href="#" class="resource-link">Slovak Grammar Exercises</a></li>
+                            <li><a href="#" class="resource-link">Pronunciation Practice</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Exam Preparation</h3>
+                        <ul>
+                            <li><a href="#" class="resource-link">Komisionálne Skúšky Guide</a></li>
+                            <li><a href="#" class="resource-link">Practice Tests</a></li>
+                            <li><a href="#" class="resource-link">Study Materials</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Member Resources</h3>
+                        <ul>
+                            <li><a href="#" class="resource-link">Video Lessons Library</a></li>
+                            <li><a href="#" class="resource-link">Downloadable Worksheets</a></li>
+                            <li><a href="#" class="resource-link">Cultural Activities</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@svcsm.org</p>
+                    <p>Follow us on social media</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="school.html">Class Schedule</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="contact.html">Support Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Slovenské Vzdelávacie Centrum - South Manchester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+</html>
