@@ -10,74 +10,74 @@
 
 /* Donation Section */
 .donation-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0; /* Padding for the donation section */
 }
 
 .donation-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-lg);
+    display: grid; /* Use grid layout for donation content */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: var(--spacing-xl); /* Space between grid items */
+    margin-top: var(--spacing-lg); /* Space above the grid */
 }
 
 .donation-uses {
-    list-style: none;
-    padding: 0;
-    margin-top: var(--spacing-md);
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin-top: var(--spacing-md); /* Space above the list */
 }
 
 .donation-uses li {
-    padding: var(--spacing-xs) 0;
-    padding-left: var(--spacing-md);
-    position: relative;
+    padding: var(--spacing-xs) 0; /* Vertical padding for list items */
+    padding-left: var(--spacing-md); /* Left padding for list items */
+    position: relative; /* Position relative for pseudo-element */
 }
 
 .donation-uses li::before {
-    content: '•';
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
+    content: '•'; /* Bullet point before list items */
+    color: var(--primary-color); /* Primary color for bullet */
+    position: absolute; /* Position absolute for bullet */
+    left: 0; /* Align bullet to the left */
 }
 
 .method-card {
-    background-color: var(--background-light);
-    padding: var(--spacing-lg);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: var(--spacing-md);
+    background-color: var(--background-light); /* Light background for method cards */
+    padding: var(--spacing-lg); /* Padding inside method cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for method cards */
+    margin-top: var(--spacing-md); /* Space above method cards */
 }
 
 .method-card h4 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
+    color: var(--primary-color); /* Primary color for method card headers */
+    margin-bottom: var(--spacing-md); /* Space below headers */
 }
 
 .method-card p {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm); /* Space below paragraphs */
 }
 
 /* Volunteer Section */
 .volunteer-section {
-    padding: var(--spacing-xl) 0;
-    background-color: #f8fafc;
+    padding: var(--spacing-xl) 0; /* Padding for the volunteer section */
+    background-color: #f8fafc; /* Light background color */
 }
 
 .volunteer-form {
-    max-width: 800px;
-    margin: var(--spacing-lg) auto;
-    background-color: var(--background-light);
-    padding: var(--spacing-lg);
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Maximum width for the form */
+    margin: var(--spacing-lg) auto; /* Center the form with margin */
+    background-color: var(--background-light); /* Light background for form */
+    padding: var(--spacing-lg); /* Padding inside the form */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for form */
 }
 
 .form-group {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg); /* Space below form groups */
 }
 
 .form-group h3 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
+    color: var(--primary-color); /* Primary color for form group headers */
+    margin-bottom: var(--spacing-md); /* Space below headers */
 }
 
 .volunteer-form input[type="text"],
@@ -85,116 +85,116 @@
 .volunteer-form input[type="tel"],
 .volunteer-form select,
 .volunteer-form textarea {
-    width: 100%;
-    padding: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
-    border: 1px solid #ddd;
-    border-radius: 0.25rem;
+    width: 100%; /* Full width for form inputs */
+    padding: var(--spacing-sm); /* Padding inside inputs */
+    margin-bottom: var(--spacing-sm); /* Space below inputs */
+    border: 1px solid #ddd; /* Light border for inputs */
+    border-radius: 0.25rem; /* Slightly rounded corners */
 }
 
 .checkbox-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
+    display: flex; /* Flexbox layout for checkbox group */
+    flex-direction: column; /* Column direction for checkboxes */
+    gap: var(--spacing-sm); /* Space between checkboxes */
 }
 
 .checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
+    display: flex; /* Flexbox layout for labels */
+    align-items: center; /* Center items vertically */
+    gap: var(--spacing-sm); /* Space between items */
 }
 
 .checkbox-group input[type="checkbox"] {
-    width: auto;
-    margin: 0;
+    width: auto; /* Auto width for checkboxes */
+    margin: 0; /* Remove default margin */
 }
 
 /* Contact Section */
 .contact-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0; /* Padding for the contact section */
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    display: grid; /* Use grid layout for contact grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: var(--spacing-lg); /* Space between grid items */
+    margin-top: var(--spacing-lg); /* Space above the grid */
 }
 
 .contact-card {
-    background-color: var(--background-light);
-    padding: var(--spacing-lg);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: var(--background-light); /* Light background for contact cards */
+    padding: var(--spacing-lg); /* Padding inside contact cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for contact cards */
+    text-align: center; /* Center text inside contact cards */
 }
 
 .contact-card h3 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
+    color: var(--primary-color); /* Primary color for contact card headers */
+    margin-bottom: var(--spacing-md); /* Space below headers */
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-md);
+    display: flex; /* Flexbox layout for social links */
+    justify-content: center; /* Center links horizontally */
+    gap: var(--spacing-md); /* Space between links */
+    margin-top: var(--spacing-md); /* Space above links */
 }
 
 .social-link {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--text-color); /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .social-link:hover {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Change color on hover */
 }
 
 /* Payment Section */
 .payment-section {
-    padding: var(--spacing-xl) 0;
-    background-color: #f8fafc;
+    padding: var(--spacing-xl) 0; /* Padding for the payment section */
+    background-color: #f8fafc; /* Light background color */
 }
 
 .payment-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    display: grid; /* Use grid layout for payment grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: var(--spacing-lg); /* Space between grid items */
+    margin-top: var(--spacing-lg); /* Space above the grid */
 }
 
 .payment-card {
-    background-color: var(--background-light);
-    padding: var(--spacing-lg);
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-light); /* Light background for payment cards */
+    padding: var(--spacing-lg); /* Padding inside payment cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for payment cards */
 }
 
 .payment-card h3 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-md);
+    color: var(--primary-color); /* Primary color for payment card headers */
+    margin-bottom: var(--spacing-md); /* Space below headers */
 }
 
 .payment-details,
 .refund-details {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
 }
 
 .payment-details li,
 .refund-details li {
-    padding: var(--spacing-xs) 0;
-    padding-left: var(--spacing-md);
-    position: relative;
+    padding: var(--spacing-xs) 0; /* Vertical padding for list items */
+    padding-left: var(--spacing-md); /* Left padding for list items */
+    position: relative; /* Position relative for pseudo-element */
 }
 
 .payment-details li::before,
 .refund-details li::before {
-    content: '•';
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
+    content: '•'; /* Bullet point before list items */
+    color: var(--primary-color); /* Primary color for bullet */
+    position: absolute; /* Position absolute for bullet */
+    left: 0; /* Align bullet to the left */
 }
 
 /* Responsive Design */
@@ -202,10 +202,10 @@
     .donation-content,
     .contact-grid,
     .payment-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Full-width columns on small screens */
     }
 
     .volunteer-form {
-        padding: var(--spacing-md);
+        padding: var(--spacing-md); /* Reduce padding on small screens */
     }
 }
