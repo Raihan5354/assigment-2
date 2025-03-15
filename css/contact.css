@@ -4,6 +4,29 @@
   Contains styles for donation, volunteer, and contact sections
 */
 
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern sans-serif font */
+    background-color: #f9f9f9; /* Light background for the body */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #d42f2f; /* Save the Children Red */
+    --secondary-color: #f8fafc; /* Light grey background color */
+    --background-light: #ffffff; /* White background for cards */
+    --text-color: #333333; /* Dark text color */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 40px;
+}
+
+/* Contact Main Section */
 .contact-main {
     padding-top: 80px; /* Account for fixed navigation */
 }
